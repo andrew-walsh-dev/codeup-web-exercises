@@ -11,7 +11,7 @@ alert("Great, " + favColor + " is my favorite color too!");
 var mermaidDays = prompt("How many days will you rent the little mermaid for?");
 var bearDays = prompt("How many days will you rent brother bear for?");
 var herculesDays = prompt("How many days will you rent hercules for?");
-var pricePerDay = prompt("How much does it cost to rent a movie per day");
+var pricePerDay = prompt("How much does it cost to rent a movie per day?");
 var totalCost = ((Number(mermaidDays) + Number(bearDays) + Number(herculesDays)) * Number(pricePerDay)).toFixed(2);
 alert("Your total cost is $" + totalCost);
 
@@ -52,7 +52,7 @@ else {
             alert("The offer can be applied!");
         }
         else {
-            alert("You need to buy more than two items to apply the offer");
+            alert("You need to buy more than two items to apply the offer.");
         }
     }
 }
