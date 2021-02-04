@@ -72,7 +72,7 @@
      * > calculateTip(0.15, 33.42) // returns 5.013
      */
     function calculateTip(tipPercent, bill) {
-
+        return (tipPercent * bill).toFixed(2);
     }
 
     /**
@@ -81,6 +81,9 @@
      * prompt the user for the bill total and a percentage they would like to tip,
      * then display the dollar amount they should tip
      */
+    var tipPercent = Number(prompt("What percent tip do you want to leave?"));
+    var bill = Number(prompt("What is the bill total?"));
+    alert("You should leave a tip of $" + calculateTip(tipPercent, bill));
 
     /**
      * TODO:
@@ -91,9 +94,14 @@
      *
      * Example:
      * > var originalPrice = 100;
-     * > var dicountPercent = .2; // 20%
-     * > applyDiscount(originalPrice, dicountPercent) // 80
+     * > var discountPercent = .2; // 20%
+     * > applyDiscount(originalPrice, discountPercent) // 80
      *
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
+    function applyDiscount(price, discount) {
+        price -= (price * discount);
+        return price.toFixed(2);
+    }
+
 })();
