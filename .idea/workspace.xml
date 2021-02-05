@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27f5db64-027e-4a8e-b92f-b15edcb20d64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeup-web-exercises.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,16 +12,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1ntU27aUw6gDybUxTDTUBx4DCYz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,6 +44,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -59,7 +53,23 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.external_js.html">
+  <component name="RunManager" selected="JavaScript Debug.conditionals.html">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="conditionals.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-exercises/conditionals.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="external_js.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-exercises/external_js.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -74,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.conditionals.html" />
         <item itemvalue="JavaScript Debug.external_js.html" />
         <item itemvalue="JavaScript Debug.inline_js.html" />
         <item itemvalue="JavaScript Debug.js-in-html-external.html" />
@@ -94,6 +105,8 @@
       <workItem from="1612372595857" duration="669000" />
       <workItem from="1612459793953" duration="363000" />
       <workItem from="1612460212732" duration="289000" />
+      <workItem from="1612541079857" duration="5269000" />
+      <workItem from="1612548966341" duration="417000" />
     </task>
     <servers />
   </component>
@@ -111,5 +124,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
