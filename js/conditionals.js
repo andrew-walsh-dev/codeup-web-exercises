@@ -184,9 +184,7 @@ alert("Your new bill is $" + newBill.toFixed(2));
  * HINT: The way we prompt for a value could be improved
  */
 
-    /*
-    TODO: make function to get input and check instead of doing it all in the if statement
-    */
+
 
 var wannaPlay = confirm("Would you like to enter a number?");
 
@@ -207,7 +205,7 @@ else {
 }
 
 //returns if input num is odd or even
-//note that 0 is even (i googled it)
+//note that 0 is even (trust me i googled it)
 function evenOrOdd(num) {
     if (num % 2 === 1) {
         return "odd";

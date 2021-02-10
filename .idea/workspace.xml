@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="27f5db64-027e-4a8e-b92f-b15edcb20d64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/conditionals.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/conditionals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lennon-Tribute" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,15 +55,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.conditionals.html">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,6 +106,10 @@
       <workItem from="1612460212732" duration="289000" />
       <workItem from="1612541079857" duration="5269000" />
       <workItem from="1612548966341" duration="417000" />
+      <workItem from="1612666043632" duration="268000" />
+      <workItem from="1612668056489" duration="1317000" />
+      <workItem from="1612797790924" duration="1979000" />
+      <workItem from="1612978003131" duration="1371000" />
     </task>
     <servers />
   </component>
