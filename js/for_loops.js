@@ -20,10 +20,11 @@ for (var i = 0; i < 10; i++) {
 
 for (var i = 1; i < 10; i++) {
     for (var j = 1; j <= i; j++) {
-        console.log(i);
+        num = i.toString().repeat(i);
     }
+    console.log(num);
 }
 
-for (i = 100; i > 0; i -= 5) {
+for (var i = 100; i > 0; i -= 5) {
     console.log(i);
 }
