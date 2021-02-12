@@ -1,7 +1,7 @@
-var i = 1;
-while (i <= 16) {
-    console.log(2 ** i);
-    i++
+var i = 2;
+while (i <= 65536) {
+    console.log(i);
+    i *= 2;
 }
 
 var allCones = Math.floor(Math.random() * 50) + 50;

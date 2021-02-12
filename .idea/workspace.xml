@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/for_loops.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/for_loops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/while.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/while.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +55,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.conditionals.html">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="conditionals.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-exercises/conditionals.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -112,7 +99,8 @@
       <workItem from="1612668056489" duration="1317000" />
       <workItem from="1612797790924" duration="1979000" />
       <workItem from="1612978003131" duration="2130000" />
-      <workItem from="1613075362858" duration="3324000" />
+      <workItem from="1613075362858" duration="4791000" />
+      <workItem from="1613146701528" duration="1312000" />
     </task>
     <servers />
   </component>
