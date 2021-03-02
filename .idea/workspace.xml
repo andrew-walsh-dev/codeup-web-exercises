@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/circle.js" afterDir="false" />
-    </list>
+    <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +117,7 @@
       <workItem from="1614229543349" duration="122000" />
       <workItem from="1614267112054" duration="4494000" />
       <workItem from="1614361644333" duration="613000" />
-      <workItem from="1614637015980" duration="367000" />
+      <workItem from="1614637015980" duration="1085000" />
     </task>
     <servers />
   </component>
