@@ -5,6 +5,75 @@
     <title>Register With Us</title>
 </head>
 <body>
+<form method="POST" action="https://request-inspector.glitch.me/">
+    <br>
+    <label> Email
+        <input type="email" placeholder="johndoe@email.com" name="email">
+    </label>
 
+    <hr><br>
+
+    <label> Password
+        <input type="password" placeholder="Password123#" name="password">
+    </label>
+
+    <hr><br>
+
+    <label> Bio
+        <textarea placeholder="I am John and I love to lorem ipsum!" name="bio"></textarea>
+    </label>
+
+    <hr><br>
+
+    <!-- Refactoring so they can select multiple answers
+    <h3>How did you hear about us?</h3>
+    <label> Billboard
+        <input type="radio" name="hearAboutUs" value="billboard">
+    </label>
+    <label> Radio Advertisement
+        <input type="radio" name="hearAboutUs" value="radio">
+    </label>
+    <label> Internet Advertisement
+        <input type="radio" name="hearAboutUs" value="internet">
+    </label>
+    <label> Other
+        <input type="radio" name="hearAboutUs" value="other">
+    </label>
+    -->
+
+    <h3>How did you hear about us?</h3>
+    <label>
+        <input type="checkbox" name="billboard"> Billboard
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="radio"> Radio Advertisement
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="internet"> Internet
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="other"> Other
+    </label>
+
+    <hr><br>
+
+    <label>Which web browser are you using?
+        <select name="browser">
+            <option name="chrome">Chrome</option>
+            <option name="safari">Safari</option>
+            <option name="firefox">Firefox</option>
+            <option name="opera">Opera</option>
+            <option name="edge">Edge</option>
+            <option name="other">Other</option>
+        </select>
+    </label>
+
+    <hr><br>
+
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>
