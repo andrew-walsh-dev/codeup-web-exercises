@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/twitter.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/twitter.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +56,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.conditionals.html">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,7 +124,8 @@
       <workItem from="1614637015980" duration="2610000" />
       <workItem from="1614793988173" duration="22000" />
       <workItem from="1614870266580" duration="604000" />
-      <workItem from="1615395723596" duration="2584000" />
+      <workItem from="1615395723596" duration="3396000" />
+      <workItem from="1615478831644" duration="19000" />
     </task>
     <servers />
   </component>
