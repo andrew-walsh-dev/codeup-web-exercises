@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: lightskyblue;
-    font-family: Chalkboard, sans-serif;
+    font-family: comic-sans ,Chalkboard, sans-serif;
 }
 
 h1 {text-align: center;}
@@ -33,20 +33,29 @@ h2, h3 {
     background: white;
     padding: 1em;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-evenly;
     /* enter needed declarations here */
 }
 
 section {
+    display: flex;
     /* enter needed declarations here */
 }
 
 section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     /* enter needed declarations here */
 }
 section:nth-of-type(1) div:last-child {
     /* enter needed declarations here */
+    align-self: baseline;
 }
 
 .purple-box {
@@ -57,10 +66,12 @@ section:nth-of-type(1) div:last-child {
 
 .purple-box:nth-of-type(1) {
     /* enter needed declarations here */
+    flex-grow: 3;
 }
 
 .purple-box:nth-of-type(2) {
     /* enter needed declarations here */
+    flex-grow: 2;
 }
 
 .blue-box {
@@ -71,10 +82,14 @@ section:nth-of-type(1) div:last-child {
 
 section:nth-of-type(3) {
     /* enter needed declarations here */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 section:nth-of-type(3) h3 {
     /* enter needed declarations here */
+    flex-grow: 1;
 
 }
 
@@ -91,6 +106,7 @@ section:nth-of-type(3) h3 {
     width: 5em;
     background: brown;
     /* enter needed declarations here */
+    flex-grow: 1;
 }
 
 .large-brown-box:nth-of-type(2) {
@@ -99,7 +115,11 @@ section:nth-of-type(3) h3 {
 
 section:nth-of-type(5) {
     /* enter needed declarations here */
+    justify-content: space-evenly;
+    margin: 15px;
+    height: 2em;
 }
+
 
 .yellow-box {
     background: yellow;
@@ -111,6 +131,10 @@ section:nth-of-type(6) {
     background: coral;
     height: 14em;
     /* enter needed declarations here */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .grey-box {
