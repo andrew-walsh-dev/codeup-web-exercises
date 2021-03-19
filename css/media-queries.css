@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     width: 95%;
     margin: .2em 0;
 }
@@ -81,6 +83,68 @@ img {
 footer p {
     font-size: .8em;
     margin-left: .6em;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    margin: 1.2em;
+}
+
+@media only screen and (min-width: 900px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+    body{
+        display: unset;
+    }
+    h1 {
+        text-align: left;
+        max-width: 30%;
+        margin: 1em;
+        float: left;
+    }
+    h2, p{
+        display: block;
+    }
+    .nav-links li {
+        background-color: white;
+        margin: 0;
+    }
+    a{
+        padding: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    nav {
+        max-width: 35%;
+        float: right;
+        margin: 2em;
+    }
+    img {
+        height: 385px;
+        width: 890px;
+    }
+    section {
+    }
+    .main {
+        float: left;
+        width: 55%;
+        margin: 0 auto 15em 1.5em;
+    }
+    .sub-section {
+        float: left;
+        width: 35%;
+        margin: .7em;
+        margin: 0 1.5em 15em auto;
+    }
+    footer p {
+        margin-left: 1.5em;
+    }
+
+
 }
 
 
