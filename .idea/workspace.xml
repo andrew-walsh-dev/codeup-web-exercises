@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-pizza.html" beforeDir="false" afterPath="$PROJECT_DIR$/order-pizza.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +47,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -133,7 +133,7 @@
       <workItem from="1615825710433" duration="6272000" />
       <workItem from="1615928069009" duration="3000" />
       <workItem from="1616175098096" duration="599000" />
-      <workItem from="1616422101373" duration="5338000" />
+      <workItem from="1616422101373" duration="11101000" />
     </task>
     <servers />
   </component>
