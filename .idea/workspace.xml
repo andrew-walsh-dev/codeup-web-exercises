@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/media-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media-queries.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media-queries.html" beforeDir="false" afterPath="$PROJECT_DIR$/media-queries.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +13,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,7 +46,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -57,7 +56,18 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.conditionals.html">
+  <component name="RunManager" selected="JavaScript Debug.order-pizza.html">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="conditionals.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-exercises/conditionals.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -70,16 +80,16 @@
     <configuration name="js-in-html-external.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-exercises/js-in-html-external.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="js-in-html.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-exercises/js-in-html.html" useBuiltInWebServerPort="true">
+    <configuration name="order-pizza.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-exercises/order-pizza.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.order-pizza.html" />
         <item itemvalue="JavaScript Debug.conditionals.html" />
         <item itemvalue="JavaScript Debug.external_js.html" />
         <item itemvalue="JavaScript Debug.inline_js.html" />
         <item itemvalue="JavaScript Debug.js-in-html-external.html" />
-        <item itemvalue="JavaScript Debug.js-in-html.html" />
       </list>
     </recent_temporary>
   </component>
@@ -120,6 +130,8 @@
       <workItem from="1615570695367" duration="4166000" />
       <workItem from="1615825710433" duration="6272000" />
       <workItem from="1615928069009" duration="3000" />
+      <workItem from="1616175098096" duration="599000" />
+      <workItem from="1616422101373" duration="1786000" />
     </task>
     <servers />
   </component>
