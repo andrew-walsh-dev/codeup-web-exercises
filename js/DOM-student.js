@@ -1,22 +1,42 @@
 //i. locating in the DOM
 
 // TODO: Find an element by the id of "hat-search". Store the result into a variable. Use a console log to check what is in your variable.
-
+let hats = document.getElementById("hat-search");
+console.log(hats);
 // TODO: Find all of our elements we made flex containers in Bootstrap! Locate the .d-flex class, store all of your results into a variable, and then console.log them.
-
+let flexContainers = document.getElementsByClassName("d-flex");
+console.log(flexContainers);
 // TODO: Finish my FOR loop to go through that variable containing our d-flex'ed items and console.log each individual one within the loop!
 
-// for(var ; i < .length; ++){
-// .. need to console.log some stuff!}
+for(var i; i < flexContainers.length; i++){
+    console.log(flexContainers[i]);
+}
 
 // TODO: Find all of our div elements and store them into a variable~! Console.log the variable to see the results within!
 
+var divs = document.getElementsByTagName("div");
+console.log(divs);
+
 // TODO: Now that we have a variable with all of the elements, can you tell me how many divs are in the HTML using that variable and a little Javascript? Hint: the variable looks and behaves a lot like an array, doesn't it? That helped us in our for loop's condition!
+
+var amountDivs = divs.length;
 
 
 // TODO BONUS (a): Write a function called locateDivs. When locateDivs is called, it should return a collection of the div elements found.
 
+function locateDivs() {
+    return document.getElementsByTagName("div");
+}
+
 // TODO BONUS (b): Write a function called locateElements. locateElements should take in one parameter, the element to be searched for, and then return a collection of those elements. If no elements by that name were found, return false.
+
+function locateElements(element) {
+    var found = document.getElementsByTagName("" + element)
+    if (found.length < 1) {
+        return false;
+    }
+    else return found;
+}
 
 // ii. a step further: accessing / looking into what we've located deeper
 
@@ -24,7 +44,12 @@
 
 // TODO: Howell's doesn't sound like the name you'd give your hat shop - let's change the innerText of that in our navigation bar to your own name.
 
+document.getElementById("brand-name").innerHTML = "Walsh's"
+
 // TODO: There's only one ordered list on the page - can you get into that ordered list and use innerHTML to change the list items within that ordered list to what you think the top sellers were?
+
+var orderedList = document.getElementsByClassName("hat-sold");
+orderedList[0].innerHTML = "Top hats";
 
 // TODO (BONUS): I have two "special-offer" classes used in my table - grab those classes by name, store them into a variable, and then use a loop to replace the innerHTML. The new table data should have strings that let our customers know that "New discounts are coming soon!"
 
