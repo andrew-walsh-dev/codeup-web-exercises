@@ -50,19 +50,45 @@ document.getElementById("brand-name").innerHTML = "Walsh's"
 
 var orderedList = document.getElementsByClassName("hat-sold");
 orderedList[0].innerHTML = "Top hats";
+orderedList[1].innerHTML = "Spinny hats";
+orderedList[2].innerHTML = "Trucker hats";
 
 // TODO (BONUS): I have two "special-offer" classes used in my table - grab those classes by name, store them into a variable, and then use a loop to replace the innerHTML. The new table data should have strings that let our customers know that "New discounts are coming soon!"
+
+var specialOffers = document.getElementsByClassName("special-offer");
+for (var i = 0; i < specialOffers.length; i++) {
+    specialOffers[i].innerHTML = "New discounts are coming soon!";
+}
 
 // attributes
 
 // TODO: Bringing in Bootstrap components, sometimes we can forget to change example or demo related text - one of my ids in the HTML is set to "navbarTogglerDemo02". I don't think we need that ID at all, can you remove that attribute for me? Start by storing it in a variable!
 
+var idToChange = document.getElementById("navbarTogglerDemo02");
+idToChange.removeAttribute("id");
+
 // TODO: Uh oh - actually there was a BUTTON that referred to 'navbarTogglerDemo02' that is right above it in our HTML structure! Let's add an ID back to the variable you used above that makes more sense (perhaps "navbar-collapser"?)
 
+idToChange.setAttribute("id", "navbar-collapser");
+
 // TODO: Now, get into that button element that makes reference to our old "navbarTogglerDemo02" ids and change those attributes to match. Refactor complete!
+
+var buttonToChange = document.getElementsByClassName("navbar-toggler")[0];
+buttonToChange.setAttribute("data-target", "#navbar-collapser")
+buttonToChange.setAttribute("aria-controls", "#navbar-collapser")
 
 // style
 
 // TODO: I've embedded a style sheet that adjusts color for the body, a class called "main-content", and an ID of "top-header". Target the three of these elements and set your own colors as you'd like to each of the three I've mentioned.
 
+var docBody = document.getElementsByTagName("body")[0];
+docBody.style.backgroundColor = "red";
+var mainContent = document.getElementsByClassName("main-content")[0];
+mainContent.style.backgroundColor = "green";
+var header = document.getElementById("top-header");
+header.style.backgroundColor = "blue";
+
+
 // TODO (BONUS): That default bootstrap font is nice, but we've been adding our own fonts to thing for a couple of weeks now! Add a font-family of some kind that you'd like it to adjust to.
+
+document.getElementsByTagName("body")[0].style.fontFamily = "Ubuntu"
