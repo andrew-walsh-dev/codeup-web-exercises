@@ -27,13 +27,13 @@
         detonationTimer--;
     }
     //update timer once per second
-    var timerInterval = setInterval(updateTimer, 1000);
+    var timerIntervalId = setInterval(updateTimer, 1000);
 
     // TODO: When this function runs, it needs to
     // cancel the interval/timeout for updateTimer()
     //clear the timer interval when the user defuses
     function defuseTheBOM() {
-        clearInterval(timerInterval);
+        clearInterval(timerIntervalId);
     }
 
     // Don't modify anything below this line!
