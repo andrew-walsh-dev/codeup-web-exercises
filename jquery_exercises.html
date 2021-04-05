@@ -5,14 +5,35 @@
 
 </head>
 <body>
-    <script
-			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <h1 id="header" class="codeup">HEADER</h1>
+    <p id="paragraph" class="codeup">PARAGRAPH</p>
+    <ul id="list" class="codeup">
+        <li id="list-item-one">
+            LIST ITEM ONE
+        </li>
+        <li id="list-item-two">
+            LIST ITEM TWO
+        </li>
+    </ul>
+    <div id="div">
+        DIV
+    </div>
+
+
+
+
+
+    <script	src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous">
     </script>
     <script>
         $(document).ready(function(){
             alert("jQuery is ready!");
+            $(".codeup").css("border", "1px solid red");
+            $("li").css("font-size", "20px");
+            $("h1, p, li").css("color", "green");
+            alert($("h1").html());
         })
     </script>
 </body>
