@@ -20,18 +20,23 @@
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 		crossorigin="anonymous">
     </script>
+
+
     <script>
         var keylog = "";
-        $(document).keyup(function(e){
-            var found = false
-            if (!found) {
-                keylog += " " + e.key;
+        $(document).on("keyup", function(e){
+            var pattern = " ArrowUp ArrowUp ArrowDown ArrowDown ArrowLeft ArrowRight ArrowLeft ArrowRight b a Enter"
+            
+            keylog += " " + e.key;
+            console.log(e.key);
+            console.log(keylog);
+            if (!pattern.includes(keylog)) {
+                keylog = '';
             }
-            if (keylog.includes("ArrowUp ArrowUp ArrowDown ArrowDown ArrowLeft ArrowRight ArrowLeft ArrowRight b a Enter")){
-                found = true;
+            if (keylog.includes(pattern)){
                 $("#text").html("You have added 30 lives!");
+                $(document).off();
             }
         })
-
     </script>
 </body>
