@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        JQUERY FAQ
+    </title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">Show Answers</button>
+    <dl>
+        <dt>Who is the director of the National Park Service?</dt>
+        <dd class="invisible">Shawn Benge</dd>
+        <dt>Who is the director of the National Park Service?</dt>
+        <dd class="invisible">Department of the Interior</dd>
+        <dt>How many employees are in the National Park Service?</dt>
+        <dd class="invisible">Around 300,000</dd>
+        <dt>How old is the National Park System?</dt>
+        <dd class="invisible">Since Aug 25, 1916</dd>
+        <dt>What is the origin of the National Park Service arrowhead?</dt>
+        <dd class="invisible">Authorized as the emblem on July 20, 1951</dd>
+    </dl>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $("#button").click(function(){
+            $("dd").toggleClass("invisible");
+        });
+            </script>
+</body>
