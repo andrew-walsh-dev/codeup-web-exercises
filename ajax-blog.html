@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        tr, tr, td{
+            width: 20%;
+            text-align: center;
+        }
+        *{
+            font-family: Ubuntu, sans-serif;
+        }
+        body{
+            background-color:#f0ead6
+        }
+        
+    </style>
+</head>
+<body class="d-flex flex-column align-items-center">
+    <div id="posts"></div>
+    <button id="updateButton" class="btn w-50 btn-outline-info">Update</button>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(updatePosts);
+        $("#updateButton").click(updatePosts);
+        
+        function updatePosts(){
+            $.get("data/blog.json")
+            .done(function(data){
+                console.log(data);
+                var html = '';
+                data.forEach(function(item){
+                    var blogHTML = '';
+                    blogHTML += "<div class='d-flex flex-column align-items-center my-3'>";
+                    blogHTML += "<h2>" + item.title + "</h2>";
+                    blogHTML += item.content;
+                    blogHTML += "<div>" + item.categories + item.date + "</div>";
+                    blogHTML += "</div>";
+                    html += blogHTML;
+                })
+                $("#posts").html(html);
+            })
+            .fail(function(error){
+                console.log(error);
+            })
+            .always(function(){
+                console.log("AJAX complete");
+            })
+        }
+    </script>
+</body>
