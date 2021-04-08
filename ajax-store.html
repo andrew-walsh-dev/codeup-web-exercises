@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        tr, tr, td{
+            width: 20%;
+            text-align: center;
+        }
+        *{
+            font-family: Ubuntu, sans-serif;
+        }
+        body{
+            background-color:#f0ead6
+        }
+        
+    </style>
+</head>
+<body class="d-flex flex-column align-items-center">
+
+<h1 class="text-center mt-3">Andrew's Tool Store</h1>
+
+<table id="products" class="my-4">
+    <thead class="p-0">
+        <tr>
+            <th id="title" class="mx-5">Title</th>
+            <th id="quantity" class="mx-5">Quantity</th>
+            <th id="price" class="mx-5">Price</th>
+            <th id="categories" class="mx-5">Categories</th>
+        </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+
+<button id="updateButton" class="btn w-50 btn-outline-info">Update</button>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+(function() {
+    "use strict";
+    // TODO: Create an AJAX GET request for the file under data/inventory.json
+    $(document).ready(updateInventory);
+    $("#updateButton").click(updateInventory);
+    
+    function updateInventory(){
+        $.get("data/inventory.json")
+        .done(function(data){
+            console.log(data);
+            var html = '';
+            data.forEach(function(item) {
+                var htmlRow = '';
+                htmlRow += "<tr>"
+                htmlRow += "<td>" + item.title + "</td>" 
+                htmlRow += "<td>" + item.quantity + "</td>"
+                htmlRow += "<td>" + item.price + "</td>"
+                htmlRow += "<td>" + item.categories + "</td>"
+                html += htmlRow;
+            });
+            $("#insertProducts").html(html);
+        })
+        .fail(function(error){
+            console.log(error);
+        })
+        .always(function(){
+            console.log("AJAX completed.");
+        })
+    }
+
+    // TODO: Take the data from inventory.json and append it to the products table
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+})();
+</script>
+
+</body>
+</html>
