@@ -18,7 +18,7 @@ let restaurants = [
         description: "Eat More Chikin!"
     },
     {
-        location: "Chipotle San Antonio TX",
+        location: "Chipotle Mexican Grill San Antonio TX",
         name: "Chipotle",
         description: "Extra rice please!"
     }
