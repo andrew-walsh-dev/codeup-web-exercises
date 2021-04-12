@@ -5,9 +5,32 @@
     <title>Weather App</title>
     <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #F8F8F6;
+        }
+        input{
+            width: 15%;
+        }
+        button{
+            width: 10%;
+        }
+        nav{
+            background-color: #2C3346;
+            width: 100%;
+        }
+        .navbar-brand{
+            color: #F8F8F6;
+        }
+    </style>
 </head>
-<body>
+<body class="container-fluid d-flex flex-column justify-content-center px-0">
+    <nav class="navbar sticky-top">
+        <a class="navbar-brand" href="#"><i class="fas fa-cloud-sun pr-1 ml-3"></i>Weather Company</a>
+    </nav>
     <div id="forecast" class="d-flex mx-auto justify-content-center mt-5"></div>
+    <input id="searchBar" type="text" placeholder="Find a city" class="mx-auto" autocomplete="off">
+    <button id="submitSearch" class="btn btn-outline-info mx-auto">Search</button>
 
 
     <!--jQuery CDN-->
@@ -16,6 +39,8 @@
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous">
     </script>
+    <!--FontAwesome CDN-->
+    <script src="https://kit.fontawesome.com/26d2d1eb84.js" crossorigin="anonymous"></script>
     <script src="js/keys.js"></script>
     <script src="js/weather.js"></script>
 </body>
