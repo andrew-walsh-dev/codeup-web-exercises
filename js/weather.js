@@ -46,6 +46,10 @@
         })
         .done(function(data){
             console.log(data);
+            var long = data.city.coord.lon;
+            var lat = data.city.coord.lat;
+            map.setCenter([long, lat]);
+             marker.setLngLat([long, lat]);
             var days = [];
             for (var i = 0; i < data.list.length; i++){
                 if (i % 8 === 0) {
