@@ -1,0 +1,33 @@
+body{
+    background-color: #F8F8F6;
+}
+input{
+    width: 15%;
+}
+button{
+    width: 10%;
+}
+nav{
+    background-color: #2C3346;
+    width: 100%;
+}
+.navbar-brand, .nav-item{
+    color: #F8F8F6;
+}
+.navbar-brand:hover, .nav-item:hover{
+    color: rgb(130, 115, 116);
+    text-decoration: none;
+}
+.btn-outline-brown{
+    border-color: rgb(130, 115, 116);
+    color: rgb(130, 115, 116);
+}
+.btn-outline-brown:hover{
+    background-color: rgb(130, 115, 116);
+    color: #fff;
+}
+.daycast{
+    border: 1px solid black;
+    border-radius: 5%;
+    max-height: 300px;
+}

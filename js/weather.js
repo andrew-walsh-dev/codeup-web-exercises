@@ -1,5 +1,30 @@
-
+    //start at san antonio by default
     getFiveDayForecast("San Antonio");
+    
+    //ask for user location and make that starting position if they allow
+    navigator.geolocation.getCurrentPosition(getLatLon);
+    function getLatLon(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+        console.log("Latitude is " + latitude);
+        console.log("Longitude is " + longitude);
+        reverseGeocode({lat: latitude, lng: longitude}, MAP_BOX_APPID)
+        .then(function(data){
+            var userCity = data.split(",")[1].trim();
+            getFiveDayForecast(userCity);
+        })
+    }
+
+    //create mapbox
+    mapboxgl.accessToken = MAP_BOX_APPID;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
+
+    //setup listener for search button
     var submitButton = $("#submitSearch");
     var searchBar = $("#searchBar");
     submitButton.click(() => console.log(searchBar.val()))
@@ -37,7 +62,7 @@
 
     function renderSingleForecast(day){
         var html = $("#forecast").html()
-        html += "<div class='d-flex flex-column justify-content-center mx-5 p-5 daycast'>"
+        html += "<div class='d-flex flex-column justify-content-center mx-3 p-5 daycast'>"
         html += "<h2 class='text-center'>" + day.dt_txt.split(" ")[0] + "</h2>"
         html += "<p class='text-center'>" + day.main.temp + "°</p>"
         html += "<p>Description: <strong>" + day.weather[0].description + "</strong></p>"
