@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
     getFiveDayForecast("San Antonio");
     var submitButton = $("#submitSearch");
     var searchBar = $("#searchBar");
@@ -46,4 +46,3 @@ $(document).ready(function(){
         html += "</div>"
         $("#forecast").html(html);
     }
-});
