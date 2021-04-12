@@ -1,16 +1,20 @@
     //start at san antonio by default
     getFiveDayForecast("San Antonio");
+    
     //create mapbox
     mapboxgl.accessToken = MAP_BOX_APPID;
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
-        zoom: 10,
+        zoom: 8,
         center: [-98.4916, 29.4252]
     });
-    var marker = new mapboxgl.Marker()
+    var marker = new mapboxgl.Marker({
+        draggable: true
+    })
     .setLngLat([-98.4916, 29.4252])
     .addTo(map);
+
 
     
     //ask for user location and make that starting position if they allow
@@ -23,7 +27,7 @@
         map.setCenter([longitude, latitude]);
         marker.setLngLat([longitude, latitude]);
         reverseGeocode({lat: latitude, lng: longitude}, MAP_BOX_APPID)
-        .then(function(data){
+        .done(function(data){
             var userCity = data.split(",")[1].trim();
             getFiveDayForecast(userCity);
         })

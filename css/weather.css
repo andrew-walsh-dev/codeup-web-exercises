@@ -36,7 +36,9 @@ nav{
     min-width: 325px;
 }
 #map{
+    position:absolute;
+    bottom: 0;
     margin: auto;
-    height: 400px;
+    height: 450px;
     width: 100%;
 }
