@@ -20,6 +20,7 @@
                 }
             }
             renderFiveDayForecast(days)
+            updateCurrentCity(data.city.name);
         })
         .fail(function(error){
             console.log("There is an error: \n",  error);
@@ -36,13 +37,17 @@
 
     function renderSingleForecast(day){
         var html = $("#forecast").html()
-        html += "<div class='d-flex flex-column justify-content-center mx-5 px-2'>"
+        html += "<div class='d-flex flex-column justify-content-center mx-5 p-5 daycast'>"
         html += "<h2 class='text-center'>" + day.dt_txt.split(" ")[0] + "</h2>"
         html += "<p class='text-center'>" + day.main.temp + "°</p>"
         html += "<p>Description: <strong>" + day.weather[0].description + "</strong></p>"
         html += "<p>Humidity: <strong>" + day.main.humidity + "%</strong></p>"
-        html += "<p>Wind: <strong>" + day.wind.speed + "</strong></p>"
+        html += "<p>Wind: <strong>" + (day.wind.speed * 2.236936).toFixed(2) + " mph</strong></p>"
         html += "<p>Pressure: <strong>" + (day.main.pressure / 68.9475728).toFixed(2) + " lbs/in<sup>2</sup></strong></p>"
         html += "</div>"
         $("#forecast").html(html);
+    }
+
+    function updateCurrentCity(city){
+        $("#currentCity").html("Current City: " + city);
     }

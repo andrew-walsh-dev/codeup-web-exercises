@@ -19,18 +19,37 @@
             background-color: #2C3346;
             width: 100%;
         }
-        .navbar-brand{
+        .navbar-brand, .nav-item{
             color: #F8F8F6;
+        }
+        .navbar-brand:hover, .nav-item:hover{
+            color: rgb(130, 115, 116);
+            text-decoration: none;
+        }
+        .btn-outline-brown{
+            border-color: rgb(130, 115, 116);
+            color: rgb(130, 115, 116);
+        }
+        .btn-outline-brown:hover{
+            background-color: rgb(130, 115, 116);
+            color: #fff;
+        }
+        .daycast{
+            border: 1px solid black;
+            border-radius: 5%;
         }
     </style>
 </head>
 <body class="container-fluid d-flex flex-column justify-content-center px-0">
     <nav class="navbar sticky-top">
-        <a class="navbar-brand" href="#"><i class="fas fa-cloud-sun pr-1 ml-3"></i>Weather Company</a>
+        <a id="brand" class="navbar-brand" href="#"><i class="fas fa-cloud-sun pr-1 ml-3"></i>Weather App</a>
+        <a id="currentCity" class="nav-item mr-3" href="#">Current City: San Antonio</a>
     </nav>
+    <div id="search" class="d-flex justify-content-center align-items-center pt-5">
+        <input id="searchBar" type="text" placeholder="Find a city" class="" autocomplete="off">
+        <button id="submitSearch" class="btn btn-outline-brown">Search</button>
+    </div>
     <div id="forecast" class="d-flex mx-auto justify-content-center mt-5"></div>
-    <input id="searchBar" type="text" placeholder="Find a city" class="mx-auto" autocomplete="off">
-    <button id="submitSearch" class="btn btn-outline-info mx-auto">Search</button>
 
 
     <!--jQuery CDN-->
