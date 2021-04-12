@@ -1,20 +1,5 @@
     //start at san antonio by default
     getFiveDayForecast("San Antonio");
-    
-    //ask for user location and make that starting position if they allow
-    navigator.geolocation.getCurrentPosition(getLatLon);
-    function getLatLon(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-        console.log("Latitude is " + latitude);
-        console.log("Longitude is " + longitude);
-        reverseGeocode({lat: latitude, lng: longitude}, MAP_BOX_APPID)
-        .then(function(data){
-            var userCity = data.split(",")[1].trim();
-            getFiveDayForecast(userCity);
-        })
-    }
-
     //create mapbox
     mapboxgl.accessToken = MAP_BOX_APPID;
     var map = new mapboxgl.Map({
@@ -23,6 +8,29 @@
         zoom: 10,
         center: [-98.4916, 29.4252]
     });
+    var marker = new mapboxgl.Marker()
+    .setLngLat([-98.4916, 29.4252])
+    .addTo(map);
+
+    
+    //ask for user location and make that starting position if they allow
+    navigator.geolocation.getCurrentPosition(getLatLon);
+    function getLatLon(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        console.log("Latitude is " + latitude);
+        console.log("Longitude is " + longitude);
+        map.setCenter([longitude, latitude]);
+        marker.setLngLat([longitude, latitude]);
+        reverseGeocode({lat: latitude, lng: longitude}, MAP_BOX_APPID)
+        .then(function(data){
+            var userCity = data.split(",")[1].trim();
+            getFiveDayForecast(userCity);
+        })
+        .fail(function(error){
+            console.log("There was an error: ", error);
+        })
+    }
 
     //setup listener for search button
     var submitButton = $("#submitSearch");

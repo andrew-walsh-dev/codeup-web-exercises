@@ -1,3 +1,6 @@
+html{
+    width: 100vw;
+}
 body{
     background-color: #F8F8F6;
 }
@@ -27,7 +30,13 @@ nav{
     color: #fff;
 }
 .daycast{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5%;
-    max-height: 300px;
+    max-height: 250px;
+    min-width: 325px;
+}
+#map{
+    margin: auto;
+    height: 400px;
+    width: 100%;
 }
