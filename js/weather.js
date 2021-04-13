@@ -20,7 +20,6 @@ marker.on("dragend", () => onDragEnd());
 //function to run when the marker is dropped
 function onDragEnd() {
     var markerCoords = marker.getLngLat();
-    console.log(markerCoords)
     reverseGeocode({ lat: markerCoords.lat, lng: markerCoords.lng }, MAP_BOX_APPID)
         .then(function (data) {
             var userCity = data.split(",")[1].trim();
@@ -37,8 +36,6 @@ navigator.geolocation.getCurrentPosition(getLatLon);
 function getLatLon(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
-    console.log("Latitude is " + latitude);
-    console.log("Longitude is " + longitude);
     map.setCenter([longitude, latitude]);
     marker.setLngLat([longitude, latitude]);
 
@@ -55,7 +52,6 @@ function getLatLon(position) {
 //setup listener for search button
 var submitButton = $("#submitSearch");
 var searchBar = $("#searchBar");
-submitButton.click(() => console.log(searchBar.val()))
 submitButton.click(() => getFiveDayForecast(searchBar.val(), "search"))
 
 //get the five day forecast for a city
@@ -66,7 +62,6 @@ function getFiveDayForecast(location, type) {
         units: "imperial",
     })
         .done(function (data) {
-            console.log(data);
             var long = data.city.coord.lon;
             var lat = data.city.coord.lat;
             if (type == "search") {
@@ -74,8 +69,9 @@ function getFiveDayForecast(location, type) {
                 marker.setLngLat([long, lat]);
             }
             var days = [];
+            console.log(data);
             for (var i = 0; i < data.list.length; i++) {
-                if (i % 8 === 0) {
+                if (i == 0 || data.list[i].dt_txt.includes("12:00:00") && days.length < 5) {
                     days.push(data.list[i]);
                 }
             }
@@ -99,7 +95,7 @@ function renderFiveDayForecast(days) {
 //render each individual forecast
 function renderSingleForecast(day) {
     var html = $("#forecast").html()
-    html += "<div class='d-flex flex-column justify-content-center mx-3 p-5 daycast'>"
+    html += "<div class='d-flex flex-column justify-content-center mx-3 mb-4 p-5 daycast'>"
     html += "<h2 class='text-center'>" + day.dt_txt.split(" ")[0] + "</h2>"
     html += "<p class='text-center'>" + day.main.temp + "°</p>"
     html += "<p>Description: <strong>" + day.weather[0].description + "</strong></p>"
@@ -112,5 +108,5 @@ function renderSingleForecast(day) {
 
 //update the current city label
 function updateCurrentCity(city) {
-    $("#currentCity").html("Current City: " + city);
+    $("#currentCity").html("Current Location: " + city);
 }
