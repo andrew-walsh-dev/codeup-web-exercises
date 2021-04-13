@@ -69,8 +69,9 @@ function getFiveDayForecast(location, type) {
                 marker.setLngLat([long, lat]);
             }
             var days = [];
+            console.log(data);
             for (var i = 0; i < data.list.length; i++) {
-                if (i % 8 === 0) {
+                if (i == 0 || data.list[i].dt_txt.includes("12:00:00") && days.length < 5) {
                     days.push(data.list[i]);
                 }
             }
@@ -94,7 +95,7 @@ function renderFiveDayForecast(days) {
 //render each individual forecast
 function renderSingleForecast(day) {
     var html = $("#forecast").html()
-    html += "<div class='d-flex flex-column justify-content-center mx-3 p-5 daycast'>"
+    html += "<div class='d-flex flex-column justify-content-center mx-3 mb-4 p-5 daycast'>"
     html += "<h2 class='text-center'>" + day.dt_txt.split(" ")[0] + "</h2>"
     html += "<p class='text-center'>" + day.main.temp + "°</p>"
     html += "<p>Description: <strong>" + day.weather[0].description + "</strong></p>"
