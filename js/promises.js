@@ -11,3 +11,12 @@ function getLatestPush(username) {
 
 //run it on my own profile
 getLatestPush("andrew-walsh-dev")
+
+function wait(milliseconds){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve(), milliseconds);
+    });
+}
+
+wait(1000).then(() => console.log("You will see this in 1 second."))
+wait(5000).then(() => console.log("You will see this in 5 seconds."))
