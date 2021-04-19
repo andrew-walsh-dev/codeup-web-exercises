@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map-filter-reduce.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map-filter-reduce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/promises.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/promises.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="promises" />
+                    <option name="lastUsedInstant" value="1618851021" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="map-filter-reduce" />
                     <option name="lastUsedInstant" value="1618603386" />
@@ -175,7 +178,7 @@
       <workItem from="1616447703001" duration="40000" />
       <workItem from="1618601579395" duration="3538000" />
       <workItem from="1618807729012" duration="41000" />
-      <workItem from="1618842441022" duration="1941000" />
+      <workItem from="1618842441022" duration="3129000" />
     </task>
     <servers />
   </component>
