@@ -56,7 +56,7 @@ console.log(longestEmail);
 
 let i = 0;
 let userString = users.reduce((str, user, index, array) => {
-    if (index == array.length - 1){
+    if (index === array.length - 1){
         str +=  "and " + user.name;
     }
     else{

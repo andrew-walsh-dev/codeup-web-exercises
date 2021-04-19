@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec6dee0-30c9-45e5-924c-7296139d6267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/promises.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/promises.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +12,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -29,6 +28,35 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="promises" />
+                    <option name="lastUsedInstant" value="1618851021" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="map-filter-reduce" />
+                    <option name="lastUsedInstant" value="1618603386" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="es6" />
+                    <option name="lastUsedInstant" value="1618603385" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1ntU27aUw6gDybUxTDTUBx4DCYz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -46,7 +74,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -147,7 +175,9 @@
       <workItem from="1616422101373" duration="12421000" />
       <workItem from="1616439048504" duration="2707000" />
       <workItem from="1616447703001" duration="40000" />
-      <workItem from="1618601579395" duration="1755000" />
+      <workItem from="1618601579395" duration="3538000" />
+      <workItem from="1618807729012" duration="41000" />
+      <workItem from="1618842441022" duration="3475000" />
     </task>
     <servers />
   </component>
